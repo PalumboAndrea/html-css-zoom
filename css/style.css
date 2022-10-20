@@ -10,25 +10,33 @@
 
 body{
     background-color: #000000;
+    font-family: 'Lato', sans-serif;
 }
 
 /* PARTE MAIN */
 
 main{
-    height: 92vh;
+    height: calc(100vh - 60px);
+    overflow: scroll;
 }
 
-#upper-section p{
+#upper-section a{
     color: white;
     background-color: #4A4A4A;
     margin-top: 0.2rem;
     margin-right: 0.3rem;
     padding: 0.2rem;
     border-radius: 0.2rem;
+    font-size: 0.9rem;
 }
 
 #upper-section{
     justify-content: flex-end;
+    padding: 0.4rem 0;
+    background-color: #000000;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
 }
 
 #users-window{
@@ -39,10 +47,18 @@ main{
 
 .user{
     margin: 1vh auto;
-    height: 15vh;
-    flex-basis: 25vh;
+    height: 150px;
+    flex-basis: 200px;
     background-color: green;
     position: relative;
+    background-image: url(https://picsum.photos/id/237/200/300);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.user a{
+    display: inline-block;
+    font-size: 1rem;
 }
 
 .user>span{
@@ -57,7 +73,7 @@ main{
 
 footer{
     width: 100%;
-    height: 8vh;
+    height: 60px;
     position: relative;
     z-index: 2;
     background-color: rgb(34,34,34);
@@ -88,13 +104,17 @@ a{
     text-align: center;
 }
 
-.end-meeting{
+.end-meeting a{
     height: 100%;
     align-items: center;
-    padding: 1rem;
+    padding: 1.4rem 1rem;
     font-size: 0.8rem;
     justify-content: flex-end;
     color: red;
     background-color: rgb(74,74,74);
+}
+
+#green{
+    color: rgb(76,199,0);
 }
 
